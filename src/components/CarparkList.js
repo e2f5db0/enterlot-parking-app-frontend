@@ -1,16 +1,14 @@
 import React from 'react'
-import '../App.css'
-import Carpark from './Carpark'
 import green from '../green.png'
 import yellow from '../yellow.png'
 import red from '../red.png'
 
-const CarparkList = ({ carpark }) => {
+const CarparkList = ({ carpark, render_carpark }) => {
 
     if (carpark.availability === 'green') {
         return (
             <div className='App-list-item' onClick={() => {
-                // render carpark
+                render_carpark(carpark)
             }}>
                 <p>{carpark.name}: <img className='App-availability-icon' src={green} alt='availability: green'></img></p>
             </div>
@@ -20,7 +18,7 @@ const CarparkList = ({ carpark }) => {
     if (carpark.availability === 'yellow') {
         return (
             <div className='App-list-item' onClick={() => {
-                // render carpark
+                render_carpark(carpark)
             }}>
                 <p>{carpark.name}: <img className='App-availability-icon' src={yellow} alt='availability: yellow'></img></p>
             </div>
@@ -30,7 +28,7 @@ const CarparkList = ({ carpark }) => {
     if (carpark.availability === 'red') {
         return (
             <div className='App-list-item' onClick={() => {
-                // render carpark
+                render_carpark(carpark)
             }}>
                 <p>{carpark.name}: <img className='App-availability-icon' src={red} alt='availability: red'></img></p>
             </div>

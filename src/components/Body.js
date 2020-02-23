@@ -1,22 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CarparkList from './CarparkList'
-import '../App.css'
-import banner from '../banner.png'
+import Carpark from './Carpark'
+import Banner from './Banner'
 
 const Body = ({ carparks }) => {
-    return (
-        <div className='App-body'>
-            <a href='https://www.kuninkuusravit.fi/'>
-                <img className='App-banner' src={banner} alt='Kuninkuusravit 2020 - Seinäjoki 31.7.-2.8.2020'></img>
-            </a>
-            <h2>Pysäköinti</h2>
-            <div>
-                {
-                    carparks.map(carpark => <CarparkList key={carpark.name} carpark={carpark} />)
-                }
+
+    const [list, setList] = useState(true)
+    const [carpark, setCarpark] = useState('')
+
+    if (list === true) {
+        return (
+            <div className='App-body'>
+                <Banner />
+                <div>
+                    {
+                        carparks.map(carpark => <CarparkList key={carpark.name} carpark={carpark} render_carpark={(carpark) => {
+                            setList(false)
+                            setCarpark(carpark)
+                        }} />)
+                    }
+                </div>
             </div>
-        </div>
-    )
+        )
+    } else {
+        return (
+            <div className='App-body'>
+                <Banner />
+                <Carpark carpark={carpark} go_back={() => setList(true)} />
+            </div>
+        )
+    }
 }
 
 export default Body

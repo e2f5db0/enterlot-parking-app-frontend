@@ -8,7 +8,7 @@
 
 .App-body {
   min-height: 100vh;
-  min-width: 20vw;
+  min-width: 60vw;
   margin-left: 20%;
   margin-right: 20%;
   display: flex;
@@ -40,4 +40,19 @@
 
 .App-availability-icon {
   margin-left: 10px;
+  min-width: 5px;
+}
+
+.App-back-icon {
+  max-width: 40px;
+}
+
+.App-inline {
+  display: inline;
+}
+
+.App-map {
+  margin-top: 30px;
+  max-width: 60vw;
+  max-height: 40vh;
 }

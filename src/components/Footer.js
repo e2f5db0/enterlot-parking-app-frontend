@@ -1,5 +1,4 @@
 import React from 'react'
-import '../App.css'
 import footer from '../footer.png'
 
 const Footer = () => {
