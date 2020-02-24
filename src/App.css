@@ -23,6 +23,7 @@
   align-items: center;
   max-height: 5vh;
   max-width: 100vw;
+  margin-top: 10px;
 }
 
 .App-banner {
@@ -41,6 +42,7 @@
 .App-availability-icon {
   margin-left: 10px;
   min-width: 5px;
+  float: right;
 }
 
 .App-back-icon {
