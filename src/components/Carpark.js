@@ -12,7 +12,7 @@ const Carpark = ({ carpark, go_back }) => {
                 <img src={icon} className='App-back-icon' alt='Go back' onClick={() => go_back()}></img>
                 <h3>{carpark.name}</h3>
                 <div className='App-inline'>
-                    <h4 className='App-inline'>Paikkatilanne:</h4>
+                    <h4 className='App-inline'>Availability: <b>Free</b></h4>
                     <img className='App-inline App-availability-icon' src={green} alt='vihreä'></img>
                 </div>
                 <br></br>
@@ -27,7 +27,7 @@ const Carpark = ({ carpark, go_back }) => {
                 <img src={icon} className='App-back-icon' alt='Go back' onClick={() => go_back()}></img>
                 <h3>{carpark.name}</h3>
                 <div className='App-inline'>
-                    <h4 className='App-inline'>Paikkatilanne:</h4>
+                    <h4 className='App-inline'>Availability: <b>Half-full</b></h4>
                     <img className='App-inline App-availability-icon' src={yellow} alt='keltainen'></img>
                 </div>
                 <br></br>
@@ -42,7 +42,7 @@ const Carpark = ({ carpark, go_back }) => {
                 <img src={icon} className='App-back-icon' alt='Go back' onClick={() => go_back()}></img>
                 <h3>{carpark.name}</h3>
                 <div className='App-inline'>
-                    <h4 className='App-inline'>Paikkatilanne:</h4>
+                    <h4 className='App-inline'>Availability: <b>Full</b></h4>
                     <img className='App-inline App-availability-icon' src={red} alt='punainen'></img>
                 </div>
                 <br></br>
