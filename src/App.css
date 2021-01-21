@@ -17,6 +17,7 @@
   font-size: calc(7px + 2vmin);
   color: #FFFFFF;
   background-color: #222A3C;
+  border-radius: 3em;
 }
 
 .App-footer {
@@ -33,15 +34,45 @@
 
 .App-list-item {
   padding: 10px;
-  min-width: 30vw;
-  max-height: 7vh;
+  width: 25em;
   margin-top: 15px;
-  border: 2px solid black;
+  border: 2px solid #1c1b1b;
+  border-radius: 2em;
+}
+
+.Carpark-list-item-upper-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.4em;
+}
+
+.Carpark-list-item-lower-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-availability-icon {
-  margin-left: 10px;
-  min-width: 5px;
+  margin-left: .5em;
+  width: 1em;
+  height: 1em;
+  border-radius: 3em;
+  animation-duration: 1s;
+  animation-name: breathe;
+  animation-iteration-count: infinite;
+}
+
+@keyframes breathe {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 .App-back-icon {
@@ -56,4 +87,8 @@
   margin-top: 30px;
   max-width: 60vw;
   max-height: 40vh;
+}
+
+.Subnotation {
+  font-size: .5em;
 }

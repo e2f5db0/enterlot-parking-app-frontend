@@ -10,7 +10,13 @@ const CarparkList = ({ carpark, render_carpark }) => {
             <div className='App-list-item' onClick={() => {
                 render_carpark(carpark)
             }}>
-                <p>{carpark.name}: <img className='App-availability-icon' src={green} alt='availability: green'></img></p>
+                <div className='Carpark-list-item-upper-row'>
+                    <p>{carpark.name}: </p>
+                    <img className='App-availability-icon' src={green} alt='availability: green'></img>
+                </div>
+                <div className='Carpark-list-item-upper-row'>
+                    <p className='Subnotation'>Write the address into your own navigator</p>
+                </div>
             </div>
         )
     }
@@ -20,7 +26,13 @@ const CarparkList = ({ carpark, render_carpark }) => {
             <div className='App-list-item' onClick={() => {
                 render_carpark(carpark)
             }}>
-                <p>{carpark.name}: <img className='App-availability-icon' src={yellow} alt='availability: yellow'></img></p>
+                <div className='Carpark-list-item-upper-row'>
+                    <p>{carpark.name}: </p>
+                    <img className='App-availability-icon' src={yellow} alt='availability: yellow'></img>
+                </div>
+                <div className='Carpark-list-item-upper-row'>
+                    <p className='Subnotation'>Write the address into your own navigator</p>
+                </div>
             </div>
         )
     }
@@ -30,7 +42,13 @@ const CarparkList = ({ carpark, render_carpark }) => {
             <div className='App-list-item' onClick={() => {
                 render_carpark(carpark)
             }}>
-                <p>{carpark.name}: <img className='App-availability-icon' src={red} alt='availability: red'></img></p>
+                <div className='Carpark-list-item-upper-row'>
+                    <p>{carpark.name}: </p>
+                    <img className='App-availability-icon' src={red} alt='availability: red'></img>
+                </div>
+                <div className='Carpark-list-item-upper-row'>
+                    <p className='Subnotation'>Write the address into your own navigator</p>
+                </div>
             </div>
         )
     }
