@@ -17,8 +17,12 @@ const App = () => {
 
   return (
     <div className="App" >
-      <Body carparks={carparks} />
-      <Footer />
+      <div className='App-inline'>
+        <Body carparks={carparks} />
+      </div>
+      <div className='App-inline'>
+        <Footer />
+      </div>
     </div>
   )
 }

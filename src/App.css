@@ -8,16 +8,15 @@
 
 .App-body {
   min-height: 100vh;
-  min-width: 60vw;
-  margin-left: 20%;
-  margin-right: 20%;
   display: flex;
+  width: 70vw;
   flex-direction: column;
   align-items: center;
   font-size: calc(7px + 2vmin);
   color: #FFFFFF;
   background-color: #222A3C;
   border-radius: 3em;
+  padding: 1em;
 }
 
 .App-footer {
@@ -33,8 +32,8 @@
 }
 
 .App-list-item {
-  padding: 10px;
-  width: 25em;
+  padding: 1em;
+  max-width: 25em;
   margin-top: 15px;
   border: 2px solid #1c1b1b;
   border-radius: 2em;
@@ -76,11 +75,17 @@
 }
 
 .App-back-icon {
-  max-width: 40px;
+  max-width: 2.5em;
+}
+
+.Availability {
+  margin-left: 2em;
 }
 
 .App-inline {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-map {
@@ -90,5 +95,11 @@
 }
 
 .Subnotation {
-  font-size: .5em;
+  font-size: .6em;
+}
+
+.Heading-go-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

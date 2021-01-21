@@ -9,10 +9,13 @@ const Carpark = ({ carpark, go_back }) => {
     if (carpark.availability === 'green') {
         return (
             <div>
-                <img src={icon} className='App-back-icon' alt='Go back' onClick={() => go_back()}></img>
-                <h3>{carpark.name}</h3>
+                <div className='Heading-go-back'>
+                    <img src={icon} className='App-back-icon' alt='Go back' onClick={() => go_back()}></img>
+                    <h3>{carpark.name}</h3>
+                </div>
                 <div className='App-inline'>
-                    <h4 className='App-inline'>Availability: <b>Free</b></h4>
+                    <p>Availability:</p>
+                    <p className='Availability'>Free</p>
                     <img className='App-inline App-availability-icon' src={green} alt='vihreä'></img>
                 </div>
                 <br></br>
@@ -24,10 +27,13 @@ const Carpark = ({ carpark, go_back }) => {
     if (carpark.availability === 'yellow') {
         return (
             <div>
-                <img src={icon} className='App-back-icon' alt='Go back' onClick={() => go_back()}></img>
-                <h3>{carpark.name}</h3>
+                <div className='Heading-go-back'>
+                    <img src={icon} className='App-back-icon' alt='Go back' onClick={() => go_back()}></img>
+                    <h3>{carpark.name}</h3>
+                </div>
                 <div className='App-inline'>
-                    <h4 className='App-inline'>Availability: <b>Half-full</b></h4>
+                    <p>Availability:</p>
+                    <p className='Availability'>Half-full</p>
                     <img className='App-inline App-availability-icon' src={yellow} alt='keltainen'></img>
                 </div>
                 <br></br>
@@ -39,10 +45,13 @@ const Carpark = ({ carpark, go_back }) => {
     if (carpark.availability === 'red') {
         return (
             <div>
-                <img src={icon} className='App-back-icon' alt='Go back' onClick={() => go_back()}></img>
-                <h3>{carpark.name}</h3>
+                <div className='Heading-go-back'>
+                    <img src={icon} className='App-back-icon' alt='Go back' onClick={() => go_back()}></img>
+                    <h3>{carpark.name}</h3>
+                </div>
                 <div className='App-inline'>
-                    <h4 className='App-inline'>Availability: <b>Full</b></h4>
+                    <p>Availability:</p>
+                    <p className='Availability'>Full</p>
                     <img className='App-inline App-availability-icon' src={red} alt='punainen'></img>
                 </div>
                 <br></br>
