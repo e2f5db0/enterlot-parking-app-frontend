@@ -32,18 +32,48 @@
 }
 
 .App-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1em;
-  max-width: 25em;
+  max-width: 15em;
   margin-top: 15px;
   border: 2px solid #1c1b1b;
   border-radius: 2em;
+}
+
+.App-list-item:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  max-width: 15em;
+  margin-top: 15px;
+  border: 2px solid #1c1b1b;
+  border-radius: 3em;
+}
+
+.App-list-item-left-section {
+  margin-left: 2em;
+  width: 21em;
+}
+
+.App-list-item-right-section {
+  width: 2em;
 }
 
 .Carpark-list-item-upper-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1.4em;
+  height: 2em;
+}
+
+.Carpark-list-item-middle-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
 }
 
 .Carpark-list-item-lower-row {
@@ -76,6 +106,10 @@
 
 .App-back-icon {
   max-width: 2.5em;
+}
+
+.App-next-icon {
+  max-width: 2em;
 }
 
 .Availability {
