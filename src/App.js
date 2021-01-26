@@ -10,9 +10,16 @@ const App = () => {
 
   useEffect(() => {
     carparkService.getAll()
-      .then((data) => {
-        setCarparks(data)
-      })
+        .then((data) => {
+          setCarparks(data)
+        })
+    // update the availability every 15 sec
+    setInterval(() => {
+      carparkService.getAll()
+        .then((data) => {
+          setCarparks(data)
+        })
+    }, 15000)
   }, [])
 
   return (
