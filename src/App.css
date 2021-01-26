@@ -132,6 +132,11 @@
   font-size: .6em;
 }
 
+.Over-map {
+  font-size: .7em;
+  transform: translateY(1.5em);
+}
+
 .Heading-go-back {
   display: flex;
   justify-content: center;

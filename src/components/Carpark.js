@@ -19,6 +19,7 @@ const Carpark = ({ carpark, go_back }) => {
                     <img className='App-inline App-availability-icon' src={green} alt='vihreä'></img>
                 </div>
                 <br></br>
+                <p className='Over-map'>Write the address into your own navigator</p>
                 <img src={`https://enterlot-parking-app-backend.herokuapp.com/map/${carpark.id}`} className='App-map' alt='Karttakuva'></img>
             </div>
         )
@@ -37,6 +38,7 @@ const Carpark = ({ carpark, go_back }) => {
                     <img className='App-inline App-availability-icon' src={yellow} alt='keltainen'></img>
                 </div>
                 <br></br>
+                <p className='Over-map'>Write the address into your own navigator</p>
                 <img src={`https://enterlot-parking-app-backend.herokuapp.com/map/${carpark.id}`} className='App-map' alt='Karttakuva'></img>
             </div>
         )
@@ -55,6 +57,7 @@ const Carpark = ({ carpark, go_back }) => {
                     <img className='App-inline App-availability-icon' src={red} alt='punainen'></img>
                 </div>
                 <br></br>
+                <p className='Over-map'>Write the address into your own navigator</p>
                 <img src={`https://enterlot-parking-app-backend.herokuapp.com/map/${carpark.id}`} className='App-map' alt='Karttakuva'></img>
             </div>
         )
