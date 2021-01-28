@@ -1,12 +1,9 @@
 import React from 'react'
-import banner from '../banner.jpg'
 
 const Banner = () => {
     return (
         <div>
-            <a href='https://www.kuninkuusravit.fi/'>
-                <img className='App-banner' src={banner} alt='Kuninkuusravit 2020 - Seinäjoki 31.7.-2.8.2020'></img>
-            </a>
+            <img className='App-banner' src='https://enterlot-parking-app-backend.herokuapp.com/banner/' alt='banner'></img>
             <h2>Event Parking</h2>
         </div>
     )
