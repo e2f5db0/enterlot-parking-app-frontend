@@ -84,8 +84,8 @@
 
 .App-availability-icon {
   margin-left: .5em;
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   border-radius: 3em;
   animation-duration: 1s;
   animation-name: breathe;
