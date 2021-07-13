@@ -110,7 +110,8 @@
 
 .App-next-icon {
   max-width: 2em;
-  background-color: #3C404F;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 .Availability {
